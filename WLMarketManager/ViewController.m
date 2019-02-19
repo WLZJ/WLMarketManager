@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WLMarketDefine.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor orangeColor];
+    view.frame = __kCGRectMake(100, 100, 80, 80);
+    [self.view addSubview:view];
+    
 }
 
 

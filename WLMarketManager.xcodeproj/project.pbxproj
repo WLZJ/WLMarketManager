@@ -10,6 +10,7 @@
 		6C9A41003EBF4958009A383F /* libPods-WLMarketManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2C10B69464B8DD73DE1B93 /* libPods-WLMarketManagerTests.a */; };
 		8036ECC6F627CC7C52D30785 /* libPods-WLMarketManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A14323B14111CC58B894F724 /* libPods-WLMarketManagerUITests.a */; };
 		872D818001FA023E02193081 /* libPods-WLMarketManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9126283F04F6BFE9CEB41D /* libPods-WLMarketManager.a */; };
+		F000C33B221BD692002E30AD /* WLMarketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F000C33A221BD692002E30AD /* WLMarketManager.m */; };
 		F0C09F3C221BCC6900564867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C09F3B221BCC6900564867 /* AppDelegate.m */; };
 		F0C09F3F221BCC6900564867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C09F3E221BCC6900564867 /* ViewController.m */; };
 		F0C09F42221BCC6900564867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C09F40221BCC6900564867 /* Main.storyboard */; };
@@ -47,6 +48,9 @@
 		AEA0F06906DBE6D32E695A74 /* Pods-WLMarketManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLMarketManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLMarketManagerTests/Pods-WLMarketManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB0834E75871CD8A8CF6C074 /* Pods-WLMarketManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLMarketManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLMarketManagerTests/Pods-WLMarketManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		E04A826E99EC19A09456CA0C /* Pods-WLMarketManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLMarketManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLMarketManagerUITests/Pods-WLMarketManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F000C339221BD692002E30AD /* WLMarketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLMarketManager.h; sourceTree = "<group>"; };
+		F000C33A221BD692002E30AD /* WLMarketManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLMarketManager.m; sourceTree = "<group>"; };
+		F000C33D221BD6DC002E30AD /* WLMarketDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLMarketDefine.h; sourceTree = "<group>"; };
 		F0C09F37221BCC6900564867 /* WLMarketManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLMarketManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C09F3A221BCC6900564867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0C09F3B221BCC6900564867 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,9 +120,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F000C338221BD65D002E30AD /* MarketManager */ = {
+			isa = PBXGroup;
+			children = (
+				F000C33D221BD6DC002E30AD /* WLMarketDefine.h */,
+				F000C339221BD692002E30AD /* WLMarketManager.h */,
+				F000C33A221BD692002E30AD /* WLMarketManager.m */,
+			);
+			path = MarketManager;
+			sourceTree = "<group>";
+		};
 		F0C09F2E221BCC6900564867 = {
 			isa = PBXGroup;
 			children = (
+				F000C338221BD65D002E30AD /* MarketManager */,
 				F0C09F39221BCC6900564867 /* WLMarketManager */,
 				F0C09F52221BCC6C00564867 /* WLMarketManagerTests */,
 				F0C09F5D221BCC6C00564867 /* WLMarketManagerUITests */,
@@ -460,6 +475,7 @@
 			files = (
 				F0C09F3F221BCC6900564867 /* ViewController.m in Sources */,
 				F0C09F4A221BCC6C00564867 /* main.m in Sources */,
+				F000C33B221BD692002E30AD /* WLMarketManager.m in Sources */,
 				F0C09F3C221BCC6900564867 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -635,7 +651,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManager/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = fanlaif2test;
@@ -651,7 +670,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManager/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = fanlaif2test;
@@ -667,7 +689,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -683,7 +709,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -698,7 +728,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManagerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManagerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -713,7 +747,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManagerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManagerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
