@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C9A41003EBF4958009A383F /* libPods-WLMarketManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2C10B69464B8DD73DE1B93 /* libPods-WLMarketManagerTests.a */; };
+		8036ECC6F627CC7C52D30785 /* libPods-WLMarketManagerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A14323B14111CC58B894F724 /* libPods-WLMarketManagerUITests.a */; };
+		872D818001FA023E02193081 /* libPods-WLMarketManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9126283F04F6BFE9CEB41D /* libPods-WLMarketManager.a */; };
 		F0C09F3C221BCC6900564867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C09F3B221BCC6900564867 /* AppDelegate.m */; };
 		F0C09F3F221BCC6900564867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C09F3E221BCC6900564867 /* ViewController.m */; };
 		F0C09F42221BCC6900564867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C09F40221BCC6900564867 /* Main.storyboard */; };
@@ -35,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04DE761C4F56E29ECDC629A5 /* Pods-WLMarketManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLMarketManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLMarketManager/Pods-WLMarketManager.release.xcconfig"; sourceTree = "<group>"; };
+		0A2C10B69464B8DD73DE1B93 /* libPods-WLMarketManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLMarketManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9126283F04F6BFE9CEB41D /* libPods-WLMarketManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLMarketManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BEE136A58CB6C537A688E91 /* Pods-WLMarketManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLMarketManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLMarketManager/Pods-WLMarketManager.debug.xcconfig"; sourceTree = "<group>"; };
+		A14323B14111CC58B894F724 /* libPods-WLMarketManagerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLMarketManagerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34223896649E5F82AEF2B22 /* Pods-WLMarketManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLMarketManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLMarketManagerUITests/Pods-WLMarketManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AEA0F06906DBE6D32E695A74 /* Pods-WLMarketManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLMarketManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLMarketManagerTests/Pods-WLMarketManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB0834E75871CD8A8CF6C074 /* Pods-WLMarketManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLMarketManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLMarketManagerTests/Pods-WLMarketManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E04A826E99EC19A09456CA0C /* Pods-WLMarketManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLMarketManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLMarketManagerUITests/Pods-WLMarketManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0C09F37221BCC6900564867 /* WLMarketManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLMarketManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C09F3A221BCC6900564867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0C09F3B221BCC6900564867 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872D818001FA023E02193081 /* libPods-WLMarketManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C9A41003EBF4958009A383F /* libPods-WLMarketManagerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8036ECC6F627CC7C52D30785 /* libPods-WLMarketManagerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8175772DB7FBBCD91B152C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B9126283F04F6BFE9CEB41D /* libPods-WLMarketManager.a */,
+				0A2C10B69464B8DD73DE1B93 /* libPods-WLMarketManagerTests.a */,
+				A14323B14111CC58B894F724 /* libPods-WLMarketManagerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C557F629532FC5017617B2E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE136A58CB6C537A688E91 /* Pods-WLMarketManager.debug.xcconfig */,
+				04DE761C4F56E29ECDC629A5 /* Pods-WLMarketManager.release.xcconfig */,
+				AEA0F06906DBE6D32E695A74 /* Pods-WLMarketManagerTests.debug.xcconfig */,
+				BB0834E75871CD8A8CF6C074 /* Pods-WLMarketManagerTests.release.xcconfig */,
+				E04A826E99EC19A09456CA0C /* Pods-WLMarketManagerUITests.debug.xcconfig */,
+				A34223896649E5F82AEF2B22 /* Pods-WLMarketManagerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F0C09F2E221BCC6900564867 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				F0C09F52221BCC6C00564867 /* WLMarketManagerTests */,
 				F0C09F5D221BCC6C00564867 /* WLMarketManagerUITests */,
 				F0C09F38221BCC6900564867 /* Products */,
+				C557F629532FC5017617B2E7 /* Pods */,
+				B8175772DB7FBBCD91B152C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0C09F63221BCC6C00564867 /* Build configuration list for PBXNativeTarget "WLMarketManager" */;
 			buildPhases = (
+				C940C7DB5D490C407E4FDEB7 /* [CP] Check Pods Manifest.lock */,
 				F0C09F33221BCC6900564867 /* Sources */,
 				F0C09F34221BCC6900564867 /* Frameworks */,
 				F0C09F35221BCC6900564867 /* Resources */,
+				314D35F664D41EC80733A9D3 /* [CP] Embed Pods Frameworks */,
+				77ABF9F9A0DFD82E4C8CAFD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0C09F66221BCC6C00564867 /* Build configuration list for PBXNativeTarget "WLMarketManagerTests" */;
 			buildPhases = (
+				4396DDD675F5A56BAECAA562 /* [CP] Check Pods Manifest.lock */,
 				F0C09F4B221BCC6C00564867 /* Sources */,
 				F0C09F4C221BCC6C00564867 /* Frameworks */,
 				F0C09F4D221BCC6C00564867 /* Resources */,
+				9A039ABBAE6B7B8DB7ED61C0 /* [CP] Embed Pods Frameworks */,
+				460C636D522CF438E5C93E99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0C09F69221BCC6C00564867 /* Build configuration list for PBXNativeTarget "WLMarketManagerUITests" */;
 			buildPhases = (
+				6C74C61C43872006DCDECB03 /* [CP] Check Pods Manifest.lock */,
 				F0C09F56221BCC6C00564867 /* Sources */,
 				F0C09F57221BCC6C00564867 /* Frameworks */,
 				F0C09F58221BCC6C00564867 /* Resources */,
+				E2F8FCE0976B09DD254A9068 /* [CP] Embed Pods Frameworks */,
+				6178A52E9F1C1F9636571A97 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,153 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		314D35F664D41EC80733A9D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLMarketManager/Pods-WLMarketManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4396DDD675F5A56BAECAA562 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLMarketManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		460C636D522CF438E5C93E99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLMarketManagerTests/Pods-WLMarketManagerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6178A52E9F1C1F9636571A97 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLMarketManagerUITests/Pods-WLMarketManagerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C74C61C43872006DCDECB03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLMarketManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77ABF9F9A0DFD82E4C8CAFD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLMarketManager/Pods-WLMarketManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A039ABBAE6B7B8DB7ED61C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLMarketManagerTests/Pods-WLMarketManagerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C940C7DB5D490C407E4FDEB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLMarketManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2F8FCE0976B09DD254A9068 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLMarketManagerUITests/Pods-WLMarketManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0C09F33221BCC6900564867 /* Sources */ = {
@@ -433,50 +629,45 @@
 		};
 		F0C09F64221BCC6C00564867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BEE136A58CB6C537A688E91 /* Pods-WLMarketManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManager/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = fanlaif2test;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		F0C09F65221BCC6C00564867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04DE761C4F56E29ECDC629A5 /* Pods-WLMarketManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManager/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = fanlaif2test;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		F0C09F67221BCC6C00564867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEA0F06906DBE6D32E695A74 /* Pods-WLMarketManagerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,16 +677,13 @@
 		};
 		F0C09F68221BCC6C00564867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0834E75871CD8A8CF6C074 /* Pods-WLMarketManagerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManagerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManagerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,15 +693,12 @@
 		};
 		F0C09F6A221BCC6C00564867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04A826E99EC19A09456CA0C /* Pods-WLMarketManagerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManagerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManagerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -523,15 +708,12 @@
 		};
 		F0C09F6B221BCC6C00564867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A34223896649E5F82AEF2B22 /* Pods-WLMarketManagerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7THY7C5S7T;
 				INFOPLIST_FILE = WLMarketManagerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fanlai.WLMarketManagerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
